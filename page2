@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color Switch</title>
+</head>
+
+<body>
+
+<button id="blackBtn" onclick="showRed()">Black</button>
+<button id="redBtn" onclick="showBlack()" style="display:none;">Red</button>
+
+<script>
+function showRed() {
+  document.getElementById("blackBtn").style.display = "none";
+  document.getElementById("redBtn").style.display = "inline";
+}
+
+function showBlack() {
+  document.getElementById("redBtn").style.display = "none";
+  document.getElementById("blackBtn").style.display = "inline";
+}
+</script>
+
+</body>
+</html>
